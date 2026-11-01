@@ -1,0 +1,373 @@
+/* Offline OFL font faces are generated into fonts.css by the build. */
+article .paper {
+  max-width: 790px;
+}
+article.layout-wide .paper {
+  max-width: none;
+}
+article.typ-atlas .tiptap,
+.typePreview.typ-atlas {
+  font-family: "Lyon Text", "LyonText", "Quill Literata", Georgia, serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+article.typ-atlas .tiptap :is(h1, h2, h3, h4, h5, h6),
+.typePreview.typ-atlas :is(h3, h4) {
+  font-family:
+    "Atlas Grotesk", "AtlasGrotesk", "Quill Source Sans", Arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+article.typ-modern .tiptap,
+.typePreview.typ-modern {
+  font-family:
+    "Neue Haas Grotesk Text Pro", "Neue Haas Grotesk", "Quill Source Sans",
+    Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+article.typ-modern .tiptap :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+article.typ-byline .tiptap,
+.typePreview.typ-byline {
+  font-family: "Publico Text", "Publico", "Quill Source Serif", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.7;
+}
+article.typ-byline .tiptap :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+article.typ-marseilles .tiptap,
+.typePreview.typ-marseilles {
+  font-family:
+    "Duplicate Sans", "DuplicateSans", "Quill DM Sans", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}
+article.typ-marseilles .tiptap :is(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+article.typ-manuscript .tiptap,
+.typePreview.typ-manuscript {
+  font-family: "Quill Courier Prime", "Courier Prime", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+article.typ-manuscript .tiptap :is(h1, h2, h3, h4, h5, h6),
+.typePreview.typ-manuscript :is(h3, h4) {
+  font-family: inherit;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+article.typ-manuscript .paper {
+  max-width: 760px;
+}
+article.typ-manuscript.layout-wide .paper {
+  max-width: none;
+}
+article .tiptap :is(code, pre) {
+  font-family: "Quill Courier Prime", Consolas, monospace;
+}
+article .tiptap h5 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 20px 0 10px;
+}
+article .tiptap h6 {
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 18px 0 10px;
+}
+.typeDialog {
+  width: 760px;
+}
+.typeCards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin: 16px 0;
+}
+.typeCard {
+  padding: 12px 10px;
+  white-space: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--border);
+  gap: 8px;
+  min-height: 130px;
+}
+.typeCard[aria-checked="true"] {
+  border-color: var(--blue);
+  background: #3265a522;
+}
+.typeCard .sample {
+  font-size: 27px;
+  line-height: 1.2;
+}
+.typeCard strong {
+  font-size: 13px;
+  font-family: inherit;
+}
+.typeCard small {
+  font:
+    10px/1.4 "Segoe UI",
+    Arial,
+    sans-serif;
+  color: var(--muted);
+}
+.typeCard.typ-atlas .sample {
+  font-family: "Quill Literata", serif;
+}
+.typeCard.typ-modern .sample {
+  font-family: "Quill Source Sans", sans-serif;
+}
+.typeCard.typ-byline .sample {
+  font-family: "Quill Source Serif", serif;
+}
+.typeCard.typ-marseilles .sample {
+  font-family: "Quill DM Sans", sans-serif;
+}
+.typeCard.typ-manuscript .sample {
+  font-family: "Quill Courier Prime", monospace;
+}
+.typePreview {
+  padding: 24px 30px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  min-height: 180px;
+}
+.typePreview h3 {
+  font-size: 25px;
+  margin: 0 0 14px;
+}
+.typePreview p {
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+.fontNote {
+  font:
+    11px/1.5 "Segoe UI",
+    Arial,
+    sans-serif;
+  color: var(--muted);
+  margin: 12px 0;
+}
+.typeDialog .checkboxLabel {
+  margin-top: 18px;
+}
+.outline {
+  order: 2;
+  border-left: 1px solid var(--border);
+  border-right: 0;
+  width: 200px;
+}
+.workspace > article {
+  order: 1;
+}
+.conversation {
+  order: 3;
+}
+.outlinePeek {
+  position: absolute;
+  right: var(--outline-right, 12px);
+  top: 26px;
+  z-index: 12;
+  order: 2;
+}
+.outlineDot {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  padding: 8px;
+  justify-content: center;
+}
+.outlineDot:before {
+  content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background: #548edc;
+  border-radius: 50%;
+}
+.outlinePeek .outlinePanel {
+  display: none;
+  position: absolute;
+  right: 18px;
+  top: 0;
+  max-height: 60vh;
+  overflow: auto;
+  width: 230px;
+  background: #1b1b1b;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 24px #0005;
+  border-radius: 6px;
+  padding: 8px;
+}
+.outlinePeek:hover .outlinePanel,
+.outlinePeek:focus-within .outlinePanel {
+  display: block;
+}
+.outlinePeek .outline {
+  border: 0;
+  width: auto;
+  padding: 4px;
+}
+.outlinePeek h4 {
+  margin: 6px;
+}
+.outline button {
+  width: 100%;
+  display: flex;
+  gap: 6px;
+}
+.outline button.selected {
+  color: var(--blue);
+  background: #346cbb20;
+}
+.outline .outlineTask {
+  font-size: 11px;
+  color: var(--muted);
+}
+[data-theme="light"] .outlinePeek .outlinePanel {
+  background: #fff;
+}
+.sideHistory {
+  max-height: 240px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.sideHistory button {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--muted);
+  font-size: 12px;
+}
+.sidebar > .sideHistoryTitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 18px 0 6px;
+}
+.sidebar {
+  overflow: auto;
+}
+.sidebar footer {
+  flex-shrink: 0;
+}
+.versionDialog {
+  width: 760px;
+}
+.diffPreview {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-height: 45vh;
+  overflow: auto;
+  border: 1px solid var(--border);
+  padding: 20px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+.diffPreview ins {
+  color: #69c58f;
+  background: #20664130;
+  text-decoration: underline;
+}
+.diffPreview del {
+  color: #e79797;
+  background: #8d313130;
+  text-decoration: line-through;
+}
+.diffLegend {
+  font-size: 12px;
+  color: var(--muted);
+}
+.diffLegend .added {
+  color: #69c58f;
+}
+.diffLegend .removed {
+  color: #e79797;
+}
+[data-theme="light"] .diffPreview ins {
+  color: #1c7742;
+  background: #dff5e5;
+}
+[data-theme="light"] .diffPreview del {
+  color: #a12d36;
+  background: #fde8ea;
+}
+.versionMeta {
+  font-size: 11px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+.historylist button {
+  justify-content: space-between;
+}
+.historylist small {
+  color: var(--muted);
+  font-size: 11px;
+}
+@media (max-width: 1100px) {
+  .outlinePeek {
+    right: var(--outline-right-small, var(--outline-right, 12px));
+  }
+  .typeCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media print {
+  .outlinePeek {
+    display: none !important;
+  }
+  .typeDialog,
+  .versionDialog {
+    display: none !important;
+  }
+  article.typ-manuscript .tiptap {
+    font-family: "Quill Courier Prime", monospace;
+  }
+}
+article.typ-lightning .tiptap,
+.typePreview.typ-lightning {
+  font-family:
+    "Salesforce Sans Web", "Quill Source Sans", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+article.typ-lightning .tiptap h1,
+article.typ-lightning .paper > .editorWrap > .tiptap > h1:first-child {
+  font-size: 33.25px;
+  line-height: 43.225px;
+}
+article.typ-arial .tiptap,
+.typePreview.typ-arial {
+  font-family: Arial, "Quill Source Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+.typeCard.typ-lightning .sample {
+  font-family: "Salesforce Sans Web", "Quill Source Sans", sans-serif;
+}
+.typeCard.typ-arial .sample {
+  font-family: Arial, "Quill Source Sans", sans-serif;
+}
+.typeCards {
+  grid-template-columns: repeat(4, 1fr);
+}
+.typeCard {
+  min-height: 112px;
+}
+article.typ-manuscript .paper > .editorWrap > .tiptap > h1:first-child {
+  letter-spacing: 0;
+  text-align: center;
+}
